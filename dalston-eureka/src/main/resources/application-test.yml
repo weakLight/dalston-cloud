@@ -1,0 +1,27 @@
+server:
+  port: 8002
+
+spring:
+  profiles:
+    active: test
+  application:
+    name: eureka-test
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+
+#server:
+#  port: 8002
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    registerWithEureka: false
+#    fetchRegistry: false

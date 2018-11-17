@@ -1,0 +1,10 @@
+version: '3'
+services:
+  eureka-server:
+    build: dalston-eureka
+    ports:
+      - 8002:8002
+  service-hi:
+    build: dalston-client
+    ports:
+      - 8085:8085

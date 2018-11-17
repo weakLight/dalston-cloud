@@ -1,0 +1,15 @@
+version: '3'
+services:
+  eureka-server:
+    image: sunny/dalston-server
+    restart: always
+    ports:
+      - 8002:8002
+
+  service-hi:
+    image: sunny/dalston-client
+    restart: always
+    ports:
+      - 8085:8085
+
+

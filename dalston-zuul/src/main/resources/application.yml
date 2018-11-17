@@ -1,0 +1,21 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8007/eureka/
+server:
+  port: 8050
+
+spring:
+  application:
+    name: dalston-zuul
+zuul:
+  routes:
+    api-ribbon:
+      path: /api-ribbon/**
+      serviceId: dalston-ribbon
+    api-feign:
+      path: /api-feign/**
+      serviceId: dalston-feign
+
+
+

@@ -1,0 +1,10 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8002/eureka/
+server:
+  port: 8089
+
+spring:
+  application:
+    name: dalston-clienttwo

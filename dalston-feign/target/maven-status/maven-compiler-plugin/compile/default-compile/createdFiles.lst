@@ -1,0 +1,4 @@
+com\dalston\feign\dalstonfeign\DalstonFeignApplication.class
+com\dalston\feign\dalstonfeign\service\FeignServiceHystric.class
+com\dalston\feign\dalstonfeign\controller\FeignController.class
+com\dalston\feign\dalstonfeign\service\FeignService.class
